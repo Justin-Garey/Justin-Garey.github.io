@@ -1,0 +1,62 @@
+{
+    "homepage": {
+        "title": "Justin Garey",
+        "subtitle": "Software Engineer",
+        "cards": [
+            {
+                "title": "About Me",
+                "content": "I have a computer science background and currently am performing research and development on 5G software and computer networking software. I've been able to work on full stack applications and I love to continue learning. Outside of my professional experience, I host my own HomeLab and make use of some AWS infrastructure."
+            },
+            {
+                "title": "Technical Skills",
+                "content": "In Progress"
+            }
+        ],
+        "skills": {
+            "skills_title": "Skills and Technologies",
+            "skills_list": ["aws", "docker", "git", "react", "tailwind", "html", "css", "js", "ts", "bash", "c", "cpp", "py"],
+            "skills_alt_text": ["AWS", "Docker", "Git", "React", "Tailwind CSS", "HTML5", "CSS3", "JavaScript", "TypeScript", "Bash", "C", "C++", "Python"]
+        },
+        "showcase_categories": [
+            {
+                "title": "Projects",
+                "items": [
+                    {
+                        "title": "GitHub",
+                        "description": "My GitHub profile with various projects and contributions.",
+                        "link": "https://github.com/justin-garey"
+                    }
+                ]
+            },
+            {
+                "title": "Blog",
+                "items": [
+                    {
+                        "title": "Example Blog",
+                        "description": "Example description.",
+                        "link": "https://github.com/justin-garey"
+                    }
+                ]
+            },
+            {
+                "title": "Games",
+                "items": [
+                    {
+                        "title": "Example Game",
+                        "description": "Example description.",
+                        "link": "https://github.com/justin-garey"
+                    }
+                ]
+            }
+        ],
+        "footer": {
+            "content": "© 2025 Justin Garey. All rights reserved.",
+            "links": [
+                {
+                    "title": "GitHub",
+                    "url": "https://github.com/justin-garey"
+                }
+            ]
+        }
+    }
+}

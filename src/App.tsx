@@ -1,27 +1,51 @@
+import webpage from './webpage.json';
+import React from 'react';
+
 export default function App() {
+
+  const [config, setConfig] = React.useState<any>(null);
+  
+  React.useEffect(() => {
+    setConfig(webpage.homepage);
+  }, []);
+  
+  if (!config) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="bg-stone-900 py-4 px-3 min-h-screen text-white">
-      <div className="w-1/2 mx-auto">
+    <div className="bg-stone-900 py-4 px-3 min-h-screen flex flex-col text-white">
+      <div className="w-1/2 mx-auto flex-grow">
         <div className="p-3">
-          <h1 className="text-4xl">Justin Garey</h1>
-          <h2 className="text-3xl text-stone-400">Software Engineer</h2>
+          <h1 className="text-4xl">{config.title}</h1>
+          <h2 className="text-3xl text-stone-400">{config.subtitle}</h2>
         </div>
-        <div className="p-3">
-          <h1 className="text-4xl">About Me</h1>
-          <p className="text-xl mt-3">
-            I have a computer science background blah blah blah blah blah blah
-            blah blah blah blah blah blah blah blah blah blah blah blah blah
-            blah blah blah blah blah blah blah blah blah blah blah blah blah
-            blah blah blah blah blah blah blah blah blah blah blah
-          </p>
-        </div>
-        <div className="p-3">
-          <h1 className="text-4xl">Technical Skills</h1>
-          <p className="text-xl mt-3">
-            List goes here
-          </p>
-        </div>
+        {config.cards.map((card: any, index: number) => (
+            <div key={index} className="p-3">
+              <h1 className="text-4xl">{card.title}</h1>
+              <p className="text-xl mt-3">
+                {card.content}
+              </p>
+            </div>
+        ))}
+        {config.skills.skills_list && config.skills.skills_list.length > 0 && (
+          <div className="p-3">
+            <h1 className="text-4xl mb-3">{config.skills.skills_title}</h1>
+            <a
+              href={`https://skillicons.dev`}
+              target="_blank"
+            >
+              <img
+                src={`https://skillicons.dev/icons?i=${config.skills.skills_list.join(',')}`}
+                alt={config.skills.skills_alt_text.join(', ')}
+              />
+            </a>
+          </div>
+        )}
       </div>
+      <footer className="mt-auto border-t border-stone-700 pt-4">
+        <div className="mb-2">{config.footer.content}</div>
+      </footer>
     </div>
   );
 }
