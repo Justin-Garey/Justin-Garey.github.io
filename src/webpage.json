@@ -9,7 +9,7 @@
             },
             {
                 "title": "Technical Skills",
-                "content": "In Progress"
+                "content": "I have professional experience in frontend development, open source 5G R&D, working with software defined radios, and with software defined networking.\n\nOutside work, my hobby projects make use of cloud infrastructure with AWS, docker containerization of HomeLab applications, full stack web development with React, Vite, Tailwind CSS, and TypeScript, and mini projects on anything the seems interesting.\n\nI have programming experience in multiple languages from functional languages like Haskell and OCaml to languages like Rust and Go. Most of my personal and professional experience uses Python, C, C++, JS, TS, and Bash."
             }
         ],
         "skills": {
@@ -50,11 +50,22 @@
             }
         ],
         "footer": {
-            "content": "© 2025 Justin Garey. All rights reserved.",
+            "content": "© 2025 Justin Garey",
             "links": [
                 {
                     "title": "GitHub",
-                    "url": "https://github.com/justin-garey"
+                    "image": "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
+                    "url": "https://github.com/Justin-Garey"
+                },
+                {
+                    "title": "LinkedIn",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg",
+                    "url": "https://www.linkedin.com/in/justin-garey/"
+                },
+                {
+                    "title": "YouTube",
+                    "image": "https://www.youtube.com/favicon.ico",
+                    "url": "https://www.youtube.com/@Justin-Garey"
                 }
             ]
         }
