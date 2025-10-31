@@ -14,7 +14,7 @@ export default function App() {
   }
 
   return (
-    <div className="bg-stone-900 py-4 px-3 min-h-screen flex flex-col text-white">
+    <div className="bg-black-olive py-4 px-3 min-h-screen flex flex-col text-white">
       <div className="w-1/2 mx-auto flex-grow">
         <div className="p-3">
           <h1 className="text-4xl">{config.title}</h1>
