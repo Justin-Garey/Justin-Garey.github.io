@@ -1,6 +1,7 @@
 import ShowcaseCategory from "./Components/Showcase";
 import webpage from "./webpage.json";
 import React from "react";
+import './App.css';
 
 export default function App() {
   const [config, setConfig] = React.useState<any>(null);
@@ -15,7 +16,7 @@ export default function App() {
 
   return (
     <div className="bg-black-olive py-4 px-3 min-h-screen flex flex-col text-white">
-      <div className="w-1/2 mx-auto flex-grow">
+      <div className="page-width mx-auto flex-grow">
         <div className="p-3">
           <h1 className="text-4xl">{config.title}</h1>
           <h2 className="text-3xl text-stone-400">{config.subtitle}</h2>
