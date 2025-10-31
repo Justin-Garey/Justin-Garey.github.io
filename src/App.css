@@ -7,3 +7,19 @@
     max-width: 75%;
   }
 }
+
+.card-width {
+  max-width: 90%;
+}
+
+@media (min-width: 800px) {
+  .card-width {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card-width {
+    max-width: 30%;
+  }
+}

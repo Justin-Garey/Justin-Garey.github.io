@@ -25,6 +25,21 @@
                         "title": "GitHub",
                         "description": "My GitHub profile with various projects and contributions.",
                         "link": "https://github.com/justin-garey"
+                    },
+                    {
+                        "title": "Guides",
+                        "description": "A compilation of various guides and tutorials I've written for things that I've either found interesting or possibly useful in the future. As an added benefit, I can send it to anyone who has a question about something I've previously encountered.",
+                        "link": "https://github.com/Justin-Garey/Guides"
+                    },
+                    {
+                        "title": "Log4j Exploit in Minecraft",
+                        "description": "During a Cyber Security course, we were tasked with covering and demonstrating a CVE. I, of course, chose CVE-2021-44228 (Log4j) so I could make a PoC exploit using Minecraft. I also created a video demonstration which is available on YouTube",
+                        "link": "https://github.com/Justin-Garey/Minecraft-Log4j-Exploit"
+                    },
+                    {
+                        "title": "Advent of Code",
+                        "description": "I try to participate a bit in AoC each year. My solutions are available on my GitHub.",
+                        "link": "https://github.com/Justin-Garey/AdventOfCode"
                     }
                 ]
             },
