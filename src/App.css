@@ -8,18 +8,19 @@
   }
 }
 
-.card-width {
+.showcase-card {
   max-width: 90%;
+  min-height: 17rem;
 }
 
 @media (min-width: 800px) {
-  .card-width {
+  .showcase-card {
     max-width: 50%;
   }
 }
 
 @media (min-width: 1300px) {
-  .card-width {
+  .showcase-card {
     max-width: 30%;
   }
 }
