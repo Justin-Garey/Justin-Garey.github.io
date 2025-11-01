@@ -9,18 +9,28 @@
 }
 
 .showcase-card {
-  max-width: 90%;
+  width: 90%;
   min-height: 17rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .showcase-card {
-    max-width: 50%;
+    width: 40%;
   }
 }
 
 @media (min-width: 1300px) {
   .showcase-card {
-    max-width: 30%;
+    width: 30%;
+  }
+}
+
+.md-image-width {
+  max-width: 95%;
+}
+
+@media (min-width: 1100px) {
+  .md-image-width {
+    max-width: 70%;
   }
 }

@@ -22,6 +22,11 @@
                 "title": "Projects",
                 "items": [
                     {
+                        "title": "Coin Engraving Design Gererator",
+                        "description": "This was initially made to make a birthday gift for a friend, but it's turned into even more. Taking the image of a cat, a coin design is made. This has also been used to make stickers and the program is able to create a CAD model of the coin.",
+                        "link": "/projects/coin-engraving"
+                    },
+                    {
                         "title": "GitHub",
                         "description": "My GitHub profile with various projects and contributions.",
                         "link": "https://github.com/justin-garey"

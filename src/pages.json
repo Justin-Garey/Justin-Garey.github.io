@@ -1,0 +1,8 @@
+{
+    "pages": [
+        {
+            "path": "/projects/coin-engraving",
+            "src": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/coin.md"
+        }
+    ]
+}

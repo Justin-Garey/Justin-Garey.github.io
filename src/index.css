@@ -1,7 +1,14 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme {
     --color-eerie-black: #23231A;
     --color-black-olive: #322f20;
     --color-eggshell: #e0e0ce;
+}
+
+@layer utilities {
+    .prose {
+        --tw-prose-headings: var(--color-eggshell);
+    }
 }
