@@ -2,7 +2,15 @@
     "pages": [
         {
             "path": "/projects/coin-engraving",
-            "src": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/coin.md"
+            "src": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/coin-engraving-design-generator.md"
+        },
+        {
+            "path": "/projects/log4j-exploit-in-minecraft",
+            "src": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/log4j-exploit-in-minecraft.md"
+        },
+        {
+            "path": "/projects/self-hosting-journey",
+            "src": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/self-hosting-journey.md"
         }
     ]
 }

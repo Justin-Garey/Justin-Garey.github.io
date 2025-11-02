@@ -27,8 +27,13 @@
                         "link": "/projects/coin-engraving"
                     },
                     {
+                        "title": "Self-Hosting Journey",
+                        "description": "A little bit about my journey into self-hosting and what services/applications I host in my HomeLab.",
+                        "link": "/projects/self-hosting-journey"
+                    },
+                    {
                         "title": "GitHub",
-                        "description": "My GitHub profile with various projects and contributions.",
+                        "description": "My GitHub profile with various projects and contributions. You will be greeted with my GitHub README which also serves as a mini portfolio.",
                         "link": "https://github.com/justin-garey"
                     },
                     {
@@ -39,7 +44,7 @@
                     {
                         "title": "Log4j Exploit in Minecraft",
                         "description": "During a Cyber Security course, we were tasked with covering and demonstrating a CVE. I, of course, chose CVE-2021-44228 (Log4j) so I could make a PoC exploit using Minecraft. I also created a video demonstration which is available on YouTube",
-                        "link": "https://github.com/Justin-Garey/Minecraft-Log4j-Exploit"
+                        "link": "/projects/log4j-exploit-in-minecraft"
                     },
                     {
                         "title": "Advent of Code",

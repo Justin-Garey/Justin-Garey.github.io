@@ -10,5 +10,9 @@
 @layer utilities {
     .prose {
         --tw-prose-headings: var(--color-eggshell);
+        --tw-prose-links: color-mix(in srgb, var(--color-eggshell) 80%, transparent);
+        a:hover {
+            opacity: 0.5;
+        }
     }
 }
