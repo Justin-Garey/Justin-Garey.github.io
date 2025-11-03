@@ -28,7 +28,7 @@ npm install tailwindcss @tailwindcss/vite
 ```
 
 Browser Router 
-```
+```bash
 npm install react-router-dom
 ```
 
@@ -40,4 +40,11 @@ npm install react-markdown
 GitHub Flavored Markdown
 ```bash
 npm install react-gfm
+```
+
+Carousel with React Slick
+```bash
+npm install react-slick
+npm i --save-dev @types/react-slick
+npm install slick-carousel
 ```

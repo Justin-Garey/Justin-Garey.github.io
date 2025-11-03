@@ -3,6 +3,7 @@ import webpage from "../webpage.json";
 import React from "react";
 import '../App.css';
 import Footer from "../Components/Footer";
+import Carousel from "../Components/Carousel";
 
 export default function Main() {
   const [config, setConfig] = React.useState<any>(null);
@@ -21,6 +22,9 @@ export default function Main() {
         <div className="p-3">
           <h1 className="text-4xl">{config.title}</h1>
           <h2 className="text-3xl text-stone-400">{config.subtitle}</h2>
+        </div>
+        <div className="flex justify-center mb-6">
+          <Carousel carouselItems={config.carousel} />
         </div>
         {config.cards.map((card: any, index: number) => (
           <div key={index} className="p-3">
