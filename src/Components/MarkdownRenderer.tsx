@@ -42,7 +42,7 @@ export default function MarkdownRenderer(props: { src: string }) {
     }, [props.src]);
 
     return (
-        <div className='page-width align-center mx-auto prose lg:prose-xl mt-6 text-eggshell'>
+        <div className='page-width align-center mx-auto prose lg:prose-xl my-6 text-eggshell'>
             <Markdown remarkPlugins={[remarkGfm]} components={{ p: ImagesWithoutPTags }}>{markdown}</Markdown>
         </div>
     );
