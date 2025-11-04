@@ -2,18 +2,6 @@
     "homepage": {
         "title": "Justin Garey",
         "subtitle": "Software Engineer",
-        "carousel": [
-            {
-                "type": "image",
-                "link": "/projects/coin-engraving",
-                "src": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/GitHub-README/coin_engraving_design_generation.png",
-                "alt": "Coin Engraving Design Generator"
-            },
-            {
-                "type": "video",
-                "src": "https://www.youtube.com/embed/VQd_KDiQRiY?si=cgPb8EFfGHmYGna2"
-            }
-        ],
         "cards": [
             {
                 "title": "About Me",

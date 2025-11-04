@@ -23,9 +23,6 @@ export default function Main() {
           <h1 className="text-4xl">{config.title}</h1>
           <h2 className="text-3xl text-stone-400">{config.subtitle}</h2>
         </div>
-        <div className="flex justify-center mb-6">
-          <Carousel carouselItems={config.carousel} />
-        </div>
         {config.cards.map((card: any, index: number) => (
           <div key={index} className="p-3">
             <h1 className="text-4xl">{card.title}</h1>
