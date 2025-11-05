@@ -1,16 +1,28 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Pages/Main';
 import MarkdownPage from './Pages/MarkdownPage';
-import Pages from './pages.json';
+import webpage from "./webpage.json";
 
 export default function App() {
+  const [config, setConfig] = React.useState<any>(null);
+
+  React.useEffect(() => {
+    setConfig(webpage.homepage);
+  }, []);
+
+  if (!config) {
+    return <div>Loading...</div>;
+  }
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
-        {Pages.pages.map((page) => (
-          <Route key={page.path} path={page.path} element={<MarkdownPage src={page.src} />} />
-        ))}
+        <Route path="/" element={<Main config={config}/>} />
+        {config.showcase_categories.flatMap((category: any) => 
+          category.items.map((item: any) => (
+            !!item.linkSrc && <Route key={item.link} path={item.link} element={<MarkdownPage src={item.linkSrc} />} />
+          ))
+        )}
       </Routes>
     </BrowserRouter>
   );
