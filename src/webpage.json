@@ -41,7 +41,9 @@
                     {
                         "title": "Guides",
                         "description": "A compilation of various guides and tutorials I've written for things that I've either found interesting or possibly useful in the future. As an added benefit, I can send it to anyone who has a question about something I've previously encountered.",
-                        "link": "https://github.com/Justin-Garey/Guides"
+                        "link": "/guides",
+                        "linkSrc": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/guides.md"
+
                     },
                     {
                         "title": "Log4j Exploit in Minecraft",
@@ -73,7 +75,7 @@
                         "title": "Bouncing DVD Logo",
                         "description": "This isn't quite a game, but when I was creating a template for web based games, I was just interested in making a bouncing DVD logo. It's something I've always wanted to make (I know, silly...). ",
                         "link": "/games/bouncing-dvd-logo",
-                        "linkSrc": "http://vite-react-bouncing-dvd.s3-website.us-east-2.amazonaws.com/"
+                        "linkSrc": "https://d2pzbxlocjeew1.cloudfront.net/"
                     }
                 ]
             }

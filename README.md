@@ -42,9 +42,19 @@ GitHub Flavored Markdown
 npm install react-gfm
 ```
 
+LaTeX Support for Markdown
+```bash
+npm install remark-math rehype-katex katex
+```
+
 Carousel with React Slick
 ```bash
 npm install react-slick
 npm i --save-dev @types/react-slick
 npm install slick-carousel
+```
+
+Icons for React
+```bash
+npm install react-icons
 ```

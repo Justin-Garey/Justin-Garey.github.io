@@ -14,9 +14,19 @@
         --tw-prose-headings: var(--color-eggshell);
         --tw-prose-links: var(--color-eggshell-800);
         --tw-prose-quotes: var(--color-eggshell-800);
+        --tw-prose-code: var(--color-eggshell);
+        --tw-prose-bold: var(--color-eggshell);
     }
 
     .prose a:hover {
         color: var(--color-eggshell-500);
+    }
+
+    .prose code::before {
+        content: "";
+    }
+
+    .prose code::after {
+        content: "";
     }
 }
