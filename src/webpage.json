@@ -70,9 +70,10 @@
                 "title": "Games",
                 "items": [
                     {
-                        "title": "Example Game",
-                        "description": "Example description.",
-                        "link": "https://github.com/justin-garey"
+                        "title": "Bouncing DVD Logo",
+                        "description": "This isn't quite a game, but when I was creating a template for web based games, I was just interested in making a bouncing DVD logo. It's something I've always wanted to make (I know, silly...). ",
+                        "link": "/games/bouncing-dvd-logo",
+                        "linkSrc": "http://vite-react-bouncing-dvd.s3-website.us-east-2.amazonaws.com/"
                     }
                 ]
             }
