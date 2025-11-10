@@ -59,7 +59,7 @@ function HandlePreTags(props: any) {
             >
                 {copied ? 'Copied!' : <FaCopy />}
             </button>
-            <pre {...props} className='bg-eerie-black text-eggshell'>
+            <pre {...props} className='bg-quaternary text-tertiary'>
                 {React.cloneElement(props.children, { ...props.children.props, className: `${props.children.props.className || ''} whitespace-pre-wrap break-words` })}
             </pre>
             </div>
@@ -88,7 +88,7 @@ export default function MarkdownRenderer(props: { src: string }) {
     }, [props.src]);
 
     return (
-        <div className='page-width align-center mx-auto prose lg:prose-xl my-6 text-eggshell'>
+        <div className='page-width align-center mx-auto prose lg:prose-xl my-6'>
             <Markdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]} components={{ p: HandlePTags, pre: HandlePreTags }}>{markdown}</Markdown>
         </div>
     );

@@ -2,24 +2,35 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-    --color-eerie-black: #23231A;
-    --color-black-olive: #322f20;
     --color-eggshell: #e0e0ce;
-    --color-eggshell-800: #e0e0cee0;
-    --color-eggshell-500: #e0e0ce80;
+    --color-eerie-black: #23231A;
+    --color-eerie-black-800: #23231Ae0;
+    --color-eerie-black-500: #23231A80;
+    --color-off-white: #F7F9F8;
+    --color-onyx: #2F3437;
+    --color-chestnet: #A8513E;
+
+    --color-primary: var(--color-eggshell);
+    --color-secondary: var(--color-eerie-black);
+    --color-secondary-800: var(--color-eerie-black-800);
+    --color-secondary-500: var(--color-eerie-black-500);
+    --color-tertiary: var(--color-off-white);
+    --color-quaternary: var(--color-onyx);
+    --color-quinary: var(--color-chestnet);
 }
 
 @layer utilities {
     .prose {
-        --tw-prose-headings: var(--color-eggshell);
-        --tw-prose-links: var(--color-eggshell-800);
-        --tw-prose-quotes: var(--color-eggshell-800);
-        --tw-prose-code: var(--color-eggshell);
-        --tw-prose-bold: var(--color-eggshell);
+        --tw-prose-headings: var(--color-secondary);
+        --tw-prose-links: var(--color-secondary-800);
+        --tw-prose-quotes: var(--color-secondary-800);
+        --tw-prose-code: var(--color-secondary);
+        --tw-prose-bold: var(--color-secondary);
+        --tw-prose-bullets: var(--color-secondary);
     }
 
     .prose a:hover {
-        color: var(--color-eggshell-500);
+        color: var(--color-secondary-500);
     }
 
     .prose code::before {

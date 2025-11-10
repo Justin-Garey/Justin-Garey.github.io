@@ -4,11 +4,11 @@ import Footer from "../Components/Footer";
 
 export default function Main(props: { config: any }) {
   return (
-    <div className="bg-black-olive py-4 px-3 min-h-screen flex flex-col text-white">
+    <div className="bg-primary py-4 px-3 min-h-screen flex flex-col text-secondary">
       <div className="page-width mx-auto flex-grow">
         <div className="p-3">
           <h1 className="text-4xl">{props.config.title}</h1>
-          <h2 className="text-3xl text-stone-400">{props.config.subtitle}</h2>
+          <h2 className="text-3xl text-secondary/40">{props.config.subtitle}</h2>
         </div>
         {props.config.cards.map((card: any, index: number) => (
           <div key={index} className="p-3">

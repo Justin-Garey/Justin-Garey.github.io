@@ -41,8 +41,7 @@
                     {
                         "title": "Guides",
                         "description": "A compilation of various guides and tutorials I've written for things that I've either found interesting or possibly useful in the future. As an added benefit, I can send it to anyone who has a question about something I've previously encountered.",
-                        "link": "/guides",
-                        "linkSrc": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/guides.md"
+                        "link": "/guides/README"
 
                     },
                     {

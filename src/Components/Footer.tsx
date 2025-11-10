@@ -12,8 +12,8 @@ export default function Footer() {
     return <></>
   }
     return (
-        <footer className="mt-auto border-t border-eerie-black pt-4 flex justify-between items-center w-full">
-        <div className="text-eggshell">{config.footer.content}</div>
+        <footer className="mt-auto border-t border-secondary pt-4 flex justify-between items-center w-full">
+        <div className="text-secondary">{config.footer.content}</div>
         <div className="flex space-x-4">
           {config.footer.links.map((link: any, index: number) => (
             <a
@@ -21,7 +21,7 @@ export default function Footer() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-eggshell-800 hover:text-eggshell-500"
+              className="hover:text-secondary/80 underline"
             >
               {link.title}
             </a>
