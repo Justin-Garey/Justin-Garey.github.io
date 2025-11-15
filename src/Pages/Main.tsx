@@ -13,9 +13,9 @@ export default function Main(props: { config: any }) {
         {props.config.cards.map((card: any, index: number) => (
           <div key={index} className="p-3">
             <h1 className="text-4xl">{card.title}</h1>
-            <p className="text-xl mt-3">
+            <div className="text-xl mt-3">
               <div style={{ whiteSpace: "pre-wrap" }}>{card.content}</div>
-            </p>
+            </div>
           </div>
         ))}
         {props.config.skills.skills_list && props.config.skills.skills_list.length > 0 && (

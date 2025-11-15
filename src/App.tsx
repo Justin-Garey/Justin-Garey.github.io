@@ -19,7 +19,7 @@ export default function App() {
       .catch(error => console.error('Error fetching guides:', error));
   }, []);
 
-  if (!config) {
+  if (!config || guides.length === 0) {
     return <div>Loading...</div>;
   }
   return (
@@ -36,11 +36,11 @@ export default function App() {
           ))
         )}
         {guides.length > 0 && guides.map((path, index) => (
-          <Route 
-            key={index}
-            path={path}
-            element={<Guide path={path} />}
-          />
+            <Route 
+              key={index}
+              path={path}
+              element={<Guide path={path} />}
+            />
         ))}
       </Routes>
     </BrowserRouter>
