@@ -61,9 +61,9 @@
                 "title": "Blog",
                 "items": [
                     {
-                        "title": "Example Blog",
-                        "description": "Example description.",
-                        "link": "https://github.com/justin-garey"
+                        "title": "BlOG!",
+                        "description": "Coming Soon! 2026",
+                        "link": "https://justingarey.dev"
                     }
                 ]
             },
@@ -72,9 +72,20 @@
                 "items": [
                     {
                         "title": "Bouncing DVD Logo",
-                        "description": "This isn't quite a game, but when I was creating a template for web based games, I was just interested in making a bouncing DVD logo. It's something I've always wanted to make (I know, silly...). ",
+                        "description": "I just really wanted to make a bouncing DVD logo. (P.S. it can hit the corner...)",
                         "link": "/games/bouncing-dvd-logo",
                         "linkSrc": "https://d2pzbxlocjeew1.cloudfront.net/"
+                    },
+                    {
+                        "title": "Adventure Cube",
+                        "description": "A simple web platformer game where you control a small cube. Originally made by my friend and now hosted on my website.",
+                        "link": "/games/adventure-cube",
+                        "linkSrc": "https://d37zkocwsfylsf.cloudfront.net/"
+                    },
+                    {
+                        "title": "ALIEEYUN (Alien Pinball)",
+                        "description": "My first game jam game! Made for Dani's Game Jam 2025. It's a simple pinball game with a tractor beam as the main obstacle.",
+                        "link": "https://itch.io/jam/danis-game-jam-2025/rate/3532940"
                     }
                 ]
             }
