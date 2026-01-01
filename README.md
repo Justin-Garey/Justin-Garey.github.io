@@ -58,3 +58,8 @@ Icons for React
 ```bash
 npm install react-icons
 ```
+
+Structured Data with JSON-LD
+```bash
+npm install schema-dts react-schemaorg
+```
