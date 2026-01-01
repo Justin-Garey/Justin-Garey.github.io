@@ -2,13 +2,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Pages/Main';
 import MarkdownPage from './Pages/MarkdownPage';
 import WebGame from './Pages/WebGame';
-import Guide from './Components/Guide';
 import { useApp } from './Context/AppContext';
 
 export default function App() {
-  const { config, guides, loading } = useApp();
+  const { config, loading } = useApp();
 
-  if (loading || !config || guides.length === 0) {
+  if (loading || !config) {
     return <div>Loading...</div>;
   }
   return (
@@ -24,13 +23,6 @@ export default function App() {
             )
           ))
         )}
-        {guides.length > 0 && guides.map((path, index) => (
-            <Route 
-              key={index}
-              path={path}
-              element={<Guide path={path} />}
-            />
-        ))}
       </Routes>
     </BrowserRouter>
   );
