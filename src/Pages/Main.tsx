@@ -1,12 +1,24 @@
 import ShowcaseCategory from "../Components/Showcase";
 import '../App.css';
 import Footer from "../Components/Footer";
+import { WebSite } from "schema-dts";
+import { JsonLd } from "react-schemaorg";
 
 export default function Main(props: { config: any }) {
   return (
     <>
       <meta name="description" content="I am a software engineer working professionally in web development, API development, AWS cloud, software defined networking, and open-source 5G R&D." />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <JsonLd<WebSite>
+        item={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": props.config.title,
+          "alternateName": "Justin Garey Website",
+          "description": "I am a software engineer working professionally in web development, API development, AWS cloud, software defined networking, and open-source 5G R&D.",
+          "url": "https://justin-garey.dev"
+        }}
+      />
       <div className="bg-primary py-4 px-3 min-h-screen flex flex-col text-secondary">
         <div className="page-width mx-auto flex-grow">
           <div className="p-3">

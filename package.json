@@ -17,10 +17,12 @@
     "react-icons": "^5.5.0",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.9.5",
+    "react-schemaorg": "^2.0.0",
     "react-slick": "^0.31.0",
     "rehype-katex": "^7.0.1",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
+    "schema-dts": "^1.1.5",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.0.9"
   },
