@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap: https://justin-garey.dev/sitemap.xml
+Sitemap: https://justin-garey.dev/sitemap.xml
