@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import AnalyticsConsentGate from "./_components/AnalyticsConsentGate";
 
 const gaID = process.env.NEXT_PUBLIC_GA_ID;
 
@@ -17,9 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {gaID && (
-        <GoogleAnalytics gaId={gaID} />
-      )}
+      <AnalyticsConsentGate gaId={gaID} />
       <body>
         {children}
       </body>
