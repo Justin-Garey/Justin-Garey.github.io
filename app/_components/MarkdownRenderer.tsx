@@ -1,15 +1,17 @@
+"use client";
+
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import 'katex/dist/katex.min.css';
 import React from 'react';
 import { FaCopy } from "react-icons/fa6";
 
 function MarkdownImageRenderer(props: any) {
+    const { alt, ...rest } = props;
     return (
         <div className="flex justify-center my-4">
-            <img {...props} className="md-image-width" />
+            <img {...rest} alt={alt ?? ""} className="md-image-width" />
         </div>
     );
 }
@@ -41,8 +43,9 @@ function HandlePTags(props: any) {
 };
 
 function HandlePreTags(props: any) {
+    const [copied, setCopied] = React.useState(false);
+
     if (props.children && props.children.type === 'code') {
-        const [copied, setCopied] = React.useState(false);
         
         const handleCopy = () => {
             const code = props.children.props.children;
