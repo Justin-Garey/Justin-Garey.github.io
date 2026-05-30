@@ -5,7 +5,7 @@ I wanted a place to list my projects, write blogs, and host my web games. This i
 ## Creation
 
 ```bash
-npm create vite@latest JustinGareyWebsite -- --template react-ts
+npx create-next-app@latest JustinGareyWebsite --typescript
 ```
 
 ## Usage
@@ -15,21 +15,26 @@ Run Development Server
 npm run dev
 ```
 
-Host Development Server to Network
+Run Production Build
 ```bash
-npm run dev -- --host
+npm run build
+```
+
+Start Production Server
+```bash
+npm run start
 ```
 
 ## Installed Packages
 
-[Tailwind](https://tailwindcss.com/docs/installation/using-vite):
+[Tailwind](https://tailwindcss.com/docs/installation/framework-guides/nextjs):
 ```bash
-npm install tailwindcss @tailwindcss/vite
+npm install tailwindcss @tailwindcss/postcss
 ```
 
-Browser Router 
+Next.js 
 ```bash
-npm install react-router-dom
+npm install next react react-dom
 ```
 
 React Markdown
@@ -57,9 +62,4 @@ npm install slick-carousel
 Icons for React
 ```bash
 npm install react-icons
-```
-
-Structured Data with JSON-LD
-```bash
-npm install schema-dts react-schemaorg
 ```

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ShowcaseCard from "./ShowcaseCard";
 
@@ -20,6 +22,7 @@ export default function ShowcaseCategory({
               return (
                 <button
                   key={idx}
+                  type="button"
                   onClick={() => setSelectedCategory(category)}
                   aria-pressed={selected}
                   className={`text-2xl flex-1 text-center rounded-full text-off-white py-3 px-6 cursor-pointer ${selected ? "bg-quinary" : "hover:bg-quinary/30"} `}

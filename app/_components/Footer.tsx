@@ -1,7 +1,4 @@
-import { useApp } from '../Context/AppContext';
-
-export default function Footer() {
-  const { config } = useApp();
+export default function Footer({ config }: { config: any }) {
 
   if (!config) {
     return <></>
