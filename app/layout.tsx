@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
+
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
 export const metadata: Metadata = {
   title: "Justin Garey Website",
@@ -14,7 +17,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        {gtmId && (
+          <>
+            <noscript>
+              <iframe
+                src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+                height="0"
+                width="0"
+                style={{ display: "none", visibility: "hidden" }}
+              />
+            </noscript>
+            <GoogleTagManager gtmId={gtmId} />
+          </>
+        )}
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
