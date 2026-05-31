@@ -91,7 +91,7 @@ export default function MarkdownRenderer(props: { src: string }) {
     }, [props.src]);
 
     return (
-        <div className='page-width align-center mx-auto prose lg:prose-xl my-6'>
+        <div className='page-width align-center mx-auto prose lg:prose-xl my-6' role="main">
             <Markdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]} components={{ p: HandlePTags, pre: HandlePreTags }}>{markdown}</Markdown>
         </div>
     );

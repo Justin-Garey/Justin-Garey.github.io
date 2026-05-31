@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 interface RouteItem {
   link?: string;
   linkSrc?: string;
+  title?: string;
 }
 
 interface Category {
@@ -78,5 +79,5 @@ export default async function SlugPage({
     return <MarkdownPage src={route.linkSrc} config={config} />;
   }
 
-  return <WebGame src={route.linkSrc} />;
+  return <WebGame src={route.linkSrc} title={route.title || ""} />;
 }

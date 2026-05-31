@@ -18,10 +18,10 @@ export default function Main(props: { config: any }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
       <div className="bg-primary py-4 px-3 min-h-screen flex flex-col text-secondary">
-        <div className="page-width mx-auto flex-grow">
+        <div className="page-width mx-auto flex-grow" role="main">
           <div className="p-3">
             <h1 className="text-4xl">{props.config.title}</h1>
-            <h2 className="text-3xl text-secondary/40">{props.config.subtitle}</h2>
+            <h2 className="text-3xl text-secondary/60">{props.config.subtitle}</h2>
           </div>
           {props.config.cards.map((card: any, index: number) => (
             <div key={index} className="p-3">
