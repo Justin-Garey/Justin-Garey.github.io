@@ -3,7 +3,7 @@ const CONFIG_URL =
 
 export async function getSiteConfig() {
   const response = await fetch(CONFIG_URL, {
-    cache: "force-cache",
+    cache: "force-cache", next: { revalidate: 3600 },
   });
 
   if (!response.ok) {
