@@ -22,6 +22,12 @@
                 "title": "Projects",
                 "items": [
                     {
+                        "title": "Building a NAS",
+                        "description": "For the longest time, I’ve had a hard drive plugged into my router being used as storage for my home services and backups. Finally, I’ve switched over to a dedicated NAS. One that I built myself!",
+                        "link": "/projects/building-a-nas",
+                        "linkSrc": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Project-Descriptions/nas-build.md"
+                    },
+                    {
                         "title": "Coin Engraving Design Generator",
                         "description": "This was initially made to make a birthday gift for a friend, but it's turned into even more. Taking the image of a cat, a coin design is made. This has also been used to make stickers and the program is able to create a CAD model of the coin.",
                         "link": "/projects/coin-engraving",

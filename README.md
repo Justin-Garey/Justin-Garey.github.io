@@ -22,7 +22,7 @@ npm run build
 
 Start Production Server
 ```bash
-npm run start
+npx serve@latest out
 ```
 
 ## Installed Packages
