@@ -7,6 +7,22 @@ import rehypeKatex from 'rehype-katex';
 import React from 'react';
 import { FaCopy } from "react-icons/fa6";
 
+function hasClassName(node: any, className: string) {
+    if (!node?.props?.className) {
+        return false;
+    }
+
+    const classes = Array.isArray(node.props.className)
+        ? node.props.className
+        : String(node.props.className).split(' ');
+
+    return classes.includes(className);
+}
+
+function isDisplayMathNode(node: any) {
+    return node?.type === 'span' && hasClassName(node, 'katex-display');
+}
+
 function MarkdownImageRenderer(props: any) {
     const { alt, ...rest } = props;
     return (
@@ -33,8 +49,8 @@ function HandlePTags(props: any) {
         });
         return <p {...props}>{modifiedChildren}</p>;
     }
-    else if (props.children && (props.children.type === 'span' && props.children.props?.className?.includes('katex')) ||
-             (Array.isArray(props.children) && props.children.some((child: any) => child?.type === 'span' && child?.props?.className?.includes('katex')))) {
+    else if (isDisplayMathNode(props.children) ||
+             (Array.isArray(props.children) && props.children.some((child: any) => isDisplayMathNode(child)))) {
         return <p {...props} className="text-center" />;
     }
     else {

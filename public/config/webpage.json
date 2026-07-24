@@ -72,9 +72,12 @@
                 "title": "Blog",
                 "items": [
                     {
-                        "title": "BlOG!",
-                        "description": "Coming Soon! 2026",
-                        "link": "https://justin-garey.dev"
+                        "title": "LoRa Explorations",
+                        "date": "2026-07-24",
+                        "tags": ["LoRa", "IoT", "Wireless", "Radio", "Electronics"],
+                        "description": "A more technical blog about LoRa and what I've learned experimenting with it. I go over the basic information, its history, and uses.",
+                        "link": "/blog/lora-explorations",
+                        "linkSrc": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Blogs/lora-exploration.md"
                     }
                 ]
             },
