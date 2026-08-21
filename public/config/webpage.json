@@ -69,8 +69,16 @@
                 ]
             },
             {
-                "title": "Blog",
+                "title": "Blogs",
                 "items": [
+                    {
+                        "title": "Microcontroller Exploration 1: Toggle an LED",
+                        "date": "2026-08-21",
+                        "tags": ["IoT", "Wireless", "Microcontroller", "Electronics", "ESP", "Web"],
+                        "description": "A beginner mini-project using an ESP module with a webserver to toggle an LED. I wanted to experiment a bit with microcontrollers for some future projects and this seemed like a good starting point.",
+                        "link": "/blog/microcontroller-exploration-1",
+                        "linkSrc": "https://justin-garey-public-storage.s3.us-east-2.amazonaws.com/Blogs/microcontroller-exploration-1.md"
+                    },
                     {
                         "title": "LoRa Explorations",
                         "date": "2026-07-24",
